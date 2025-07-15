@@ -17,9 +17,10 @@
       padding: 40px 20px;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      margin-top: 15px;
     }
     section {
       padding: 40px 20px;
@@ -31,27 +32,29 @@
       border-bottom: 2px solid #ccc;
       padding-bottom: 10px;
     }
-    .project {
+    .project, .experience-item {
       background: #fff;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       margin-bottom: 20px;
     }
-    .experience-item {
-      margin-bottom: 30px;
-    }
-    .experience-item h3 {
-      margin-bottom: 5px;
-      font-size: 1.2em;
-      color: #2e3a59;
-    }
     a {
-      color: #0066cc;
+      color: #fff;
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
+    .btn {
+      background-color: #0066cc;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .skills-container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
     }
     footer {
       background-color: #2e3a59;
@@ -59,92 +62,96 @@
       text-align: center;
       padding: 20px;
     }
-    ul {
-      padding-left: 20px;
+    section:nth-of-type(even) {
+      background-color: #ffffff;
     }
-    iframe {
-      border: none;
-      width: 100%;
-      height: 600px;
-      margin-top: 15px;
-      border-radius: 10px;
+    section:nth-of-type(odd) {
+      background-color: #f0f4fa;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Data Analytics Portfolio</h1>
-    <p>Sanjay R – Freelance Data Analyst | Python • SQL • Tableau</p>
+    <h1>Turning Raw Data into Strategic Decisions</h1>
+    <p>Sanjay R | Data Analyst | Python • SQL • Tableau</p>
+    <img src="photo.jpg" alt="Sanjay R">
+    <p><a href="sanjay_resume.pdf" class="btn" target="_blank">📄 Download Resume</a></p>
   </header>
 
   <section>
-    <h2>About Me</h2>
+    <h2>📘 About Me</h2>
     <p>I am a freelance data analyst passionate about transforming raw data into actionable insights. With a background in MSc Data Analytics, I work with tools like Python, SQL, Excel, and Tableau to solve real-world problems. I help businesses and clients make informed decisions through data visualization, reporting, and machine learning.</p>
   </section>
 
   <section>
-    <h2>Projects</h2>
+    <h2>📈 Projects</h2>
 
     <div class="project">
       <h3>🤖 NEET Allotted List Prediction and Analysis using NLP</h3>
-      <p>This project addresses the need for prospective medical students to understand their chances of being allotted a specific college based on their NEET rank, quota, and category.</p>
-      <p>The project utilizes Natural Language Processing (NLP) techniques with the Deepset RoBERTa model for question-answering tasks to analyze the relationship between NEET ranks and college allotments.</p>
-      <p>The model is built upon the NEET allotted list, allowing it to predict institutes based on user inputs. The results demonstrate that the model can effectively predict the allotted college for a given rank, quota, and category. Users can also find the required rank for specific institutes or explore possible colleges based on their rank, improving the overall decision-making process for students.</p>
-      <p><a href="https://github.com/sanjay-analytics/sanjay-analytics.github.io/blob/main/NEET_Allotment_Prediction_and_Analysis_using_NLP.ipynb" target="_blank">👉 View Code (Jupyter Notebook)</a></p>
+      <p>Helps prospective medical students predict college allotment based on NEET rank, quota, and category. Uses the Deepset RoBERTa NLP model to understand rank-to-institute relationships.</p>
+      <a href="https://github.com/sanjay-analytics/sanjay-analytics.github.io/blob/main/NEET_Allotment_Prediction_and_Analysis_using_NLP.ipynb" class="btn" target="_blank">👉 View Code (Notebook)</a>
     </div>
 
     <div class="project">
       <h3>📊 College Prediction and Visualization using Tableau</h3>
-      <p>This project aims to provide a visual representation of the likelihood of being allotted to a college based on a student's NEET rank.</p>
-      <p>The project utilizes Tableau to categorize the chances of college allotment into three levels: "HIGH," "MEDIAN," and "LOW," based on the user's NEET rank. Colleges in all three categories are ordered from highest to lowest based on relevant criteria, including UG intake, total beds, PG intakes, total MBBS seats, and first-round closing rank.</p>
-      <p>The visualization effectively categorizes colleges based on the probability of allotment, providing users with a ranked list of institutions across all categories. This allows students to focus on the most favorable options available based on their rank and enhances their understanding of the admission landscape.</p>
-      <p><a href="https://public.tableau.com/views/College_Predict_17524962687200/CollegeAdmissionChance" target="_blank">👉 View Dashboard</a></p>
+      <p>Uses Tableau to visualize NEET allotment probabilities, grouping colleges into High, Median, and Low chance based on NEET rank and medical infrastructure stats.</p>
+      <a href="https://public.tableau.com/views/College_Predict_17524962687200/CollegeAdmissionChance" class="btn" target="_blank">👉 View Dashboard</a>
     </div>
-
   </section>
 
   <section>
-    <h2>Skills & Tools</h2>
-    <ul>
-      <li><strong>Languages:</strong> Python, SQL</li>
-      <li><strong>Libraries & Concepts:</strong> Seaborn, Matplotlib, Scikit-learn, Pandas, NumPy, Machine Learning, Data Mining, Data Visualization, Analytical Skills, Tableau, MySQL</li>
-      <li><strong>Tools:</strong> Excel, Tableau, Power BI, Jupyter, Google Colab</li>
-      <li><strong>Other:</strong> Hugging Face Models, Transformers, LLaMA Model, Chatbot Creation</li>
-    </ul>
+    <h2>🧰 Skills & Tools</h2>
+    <div class="skills-container">
+      <ul>
+        <li><strong>Languages:</strong> Python, SQL</li>
+        <li><strong>Libraries:</strong> Pandas, NumPy, Seaborn, Matplotlib</li>
+        <li><strong>ML & NLP:</strong> Scikit-learn, Transformers, HuggingFace</li>
+      </ul>
+      <ul>
+        <li><strong>Tools:</strong> Excel, Power BI, Tableau, Jupyter</li>
+        <li><strong>Platforms:</strong> Google Colab, GitHub</li>
+        <li><strong>Other:</strong> LLaMA Model, Chatbot Creation</li>
+      </ul>
+    </div>
   </section>
 
   <section>
-    <h2>Experience & Internships</h2>
+    <h2>💼 Experience & Internships</h2>
 
     <div class="experience-item">
       <h3>🎓 Data Analyst Intern – VVT Solutions Pvt Ltd</h3>
-      <p><strong>Period:</strong> August 2023 – January 2024</p>
-      <p>Assisted in gathering and preparing educational datasets for analysis. Gained hands-on experience in Excel, Python, and early-stage data analytics tasks supporting education-based insights.</p>
+      <p><strong>Aug 2023 – Jan 2024</strong></p>
+      <p>Assisted in gathering and preparing educational datasets. Gained hands-on experience in Excel, Python, and early-stage data analytics projects.</p>
     </div>
 
     <div class="experience-item">
       <h3>📊 Data Collection Analyst – VVT Solutions Pvt Ltd</h3>
-      <p><strong>Period:</strong> February 2024 – June 2024</p>
+      <p><strong>Feb 2024 – Jun 2024</strong></p>
       <ul>
-        <li>Collected and organized NEET allotment lists and JEE Main seat matrices.</li>
-        <li>Cleaned and formatted raw data using Excel and Python for analysis.</li>
-        <li>Contributed to the development of a chatbot for a college suggestion app using a question-answer NLP model.</li>
+        <li>Managed NEET and JEE seat matrix datasets.</li>
+        <li>Performed data cleaning using Excel and Python.</li>
+        <li>Built an NLP chatbot for college prediction.</li>
       </ul>
     </div>
 
     <div class="experience-item">
       <h3>💼 Data Analyst – Golden Opportunities</h3>
-      <p><strong>Period:</strong> March 2025 – Present</p>
-      <p>Working on recruitment and student data analytics projects, utilizing Python, MySQL, and Tableau to derive insights and support operational decisions.</p>
+      <p><strong>Mar 2025 – Present</strong></p>
+      <p>Working on recruitment and student data projects using Python, MySQL, and Tableau to support decision-making.</p>
     </div>
   </section>
 
   <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:sanjayramesh414@gmail.com">sanjayramesh414@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/sanjay-r-545484283" target="_blank">linkedin.com/in/sanjay-r-545484283</a></p>
-    <p>GitHub: <a href="https://github.com/sanjay-analytics" target="_blank">github.com/sanjay-analytics</a></p>
+    <h2>📬 Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:sanjayramesh414@gmail.com">sanjayramesh414@gmail.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sanjay-r-545484283" target="_blank">linkedin.com/in/sanjay-r-545484283</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/sanjay-analytics" target="_blank">github.com/sanjay-analytics</a></p>
+  </section>
+
+  <section>
+    <h2>🚀 Let's Work Together</h2>
+    <p>If you're looking for a reliable data analyst to turn your data into actionable insights, <a href="mailto:sanjayramesh414@gmail.com">reach out</a>. I'm open to freelance, contract, or full-time opportunities.</p>
   </section>
 
   <footer>
