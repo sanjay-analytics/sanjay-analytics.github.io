@@ -8,26 +8,41 @@
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background: #f4f6f9;
+      background: #f9f9f9;
       color: #2c3e50;
-      line-height: 1.6;
     }
     header {
       background-color: #BF40BF;
       color: #fff;
-      padding: 20px 10px;
+      padding: 30px 20px;
       text-align: center;
     }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    header p {
+      font-size: 1.1em;
+      margin: 5px 0;
+    }
     header img {
-      width: 100px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
       object-fit: cover;
       border-radius: 50%;
-      margin-top: 15px;
-      border: 3px solid #ecf0f1;
+      margin: 15px auto 10px;
+      border: 3px solid #fff;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
+    }
+    .btn {
+      background-color: #ffffff;
+      color: #BF40BF;
+      padding: 10px 18px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
     }
     section {
       padding: 40px 20px;
@@ -35,70 +50,47 @@
       margin: auto;
     }
     h2 {
-      color: #34495e;
-      border-bottom: 2px solid #bdc3c7;
-      padding-bottom: 10px;
-      font-size: 1.8em;
+      color: #BF40BF;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      font-size: 1.5em;
     }
     .project, .experience-item {
-      background: #ffffff;
+      background: #fff;
       padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
       margin-bottom: 25px;
     }
     a {
       color: #2980b9;
       text-decoration: none;
     }
-    .btn {
-      background-color: #2980b9;
-      color: #fff !important;
-      padding: 10px 20px;
-      border-radius: 6px;
-      display: inline-block;
-      margin-top: 10px;
-      font-weight: bold;
+    a:hover {
+      text-decoration: underline;
     }
-    .skills-container {
-      display: flex;
-      gap: 40px;
-      flex-wrap: wrap;
+    ul {
+      padding-left: 20px;
     }
     footer {
       background-color: #2c3e50;
-      color: white;
+      color: #fff;
       text-align: center;
       padding: 20px;
     }
     footer a {
-      color: #ecf0f1;
-    }
-    section:nth-of-type(even) {
-      background-color: #ffffff;
-    }
-    section:nth-of-type(odd) {
-      background-color: #eef1f6;
-    }
-    .fiverr-gig {
-      background: #fdf5ff;
-      border: 2px solid #9932CC;
-      border-radius: 10px;
-      padding: 20px;
-      margin-top: 30px;
-    }
-    .fiverr-gig h3 {
-      color: #BF40BF;
+      color: #fff;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1 style="font-size: 1.6em;">Transforming Complex Data into Clear Insights</h1>
-    <p style="font-size: 1em;">Sanjay R | Data Analyst | Python • SQL • Tableau</p>
-    <img src="photo.jpg" alt="Sanjay R" onerror="this.style.display='none'; alert('📸 photo.jpg not found. Please upload it to your GitHub repo root.');">
-    <p><a href="sanjay_resume.pdf" class="btn" target="_blank">📄 Download My Resume</a></p>
+    <h1>Turning Raw Data into Strategic Decisions</h1>
+    <p>Sanjay R | Data Analyst | Python • SQL • Tableau</p>
+    <img src="photo.jpg" alt="Sanjay R Photo" onerror="this.style.display='none'">
+    <p><a href="sanjay_resume.pdf" class="btn" target="_blank">📄 Download Resume</a></p>
   </header>
 
   <section>
@@ -111,31 +103,26 @@
 
     <div class="project">
       <h3>🤖 NEET Allotted List Prediction and Analysis using NLP</h3>
-      <p>Helps prospective medical students predict college allotment based on NEET rank, quota, and category. Uses the Deepset RoBERTa NLP model to understand rank-to-institute relationships.</p>
-      <a href="https://github.com/sanjay-analytics/sanjay-analytics.github.io/blob/main/NEET_Allotment_Prediction_and_Analysis_using_NLP.ipynb" class="btn" target="_blank">👉 View Code (Notebook)</a>
+      <p>This project helps prospective medical students predict college allotment based on NEET rank, quota, and category using the Deepset RoBERTa NLP model.</p>
+      <a href="https://github.com/sanjay-analytics/sanjay-analytics.github.io/blob/main/NEET_Allotment_Prediction_and_Analysis_using_NLP.ipynb" target="_blank" class="btn">👉 View Code (Notebook)</a>
     </div>
 
     <div class="project">
       <h3>📊 College Prediction and Visualization using Tableau</h3>
-      <p>Uses Tableau to visualize NEET allotment probabilities, grouping colleges into High, Median, and Low chance based on NEET rank and medical infrastructure stats.</p>
-      <a href="https://public.tableau.com/views/College_Predict_17524962687200/CollegeAdmissionChance" class="btn" target="_blank">👉 View Dashboard</a>
+      <p>Uses Tableau to visualize NEET allotment probabilities and groups colleges into High, Median, and Low chance based on NEET rank and infra stats.</p>
+      <a href="https://public.tableau.com/views/College_Predict_17524962687200/CollegeAdmissionChance" target="_blank" class="btn">👉 View Dashboard</a>
     </div>
   </section>
 
   <section>
     <h2>🧰 Skills & Tools</h2>
-    <div class="skills-container">
-      <ul>
-        <li><strong>Languages:</strong> Python, SQL</li>
-        <li><strong>Libraries:</strong> Pandas, NumPy, Seaborn, Matplotlib</li>
-        <li><strong>ML & NLP:</strong> Scikit-learn, Transformers, HuggingFace</li>
-      </ul>
-      <ul>
-        <li><strong>Tools:</strong> Excel, Power BI, Tableau, Jupyter</li>
-        <li><strong>Platforms:</strong> Google Colab, GitHub</li>
-        <li><strong>Other:</strong> LLaMA Model, Chatbot Creation</li>
-      </ul>
-    </div>
+    <ul>
+      <li><strong>Languages:</strong> Python, SQL</li>
+      <li><strong>Libraries:</strong> Pandas, NumPy, Seaborn, Matplotlib</li>
+      <li><strong>ML & NLP:</strong> Scikit-learn, Transformers, HuggingFace</li>
+      <li><strong>Tools:</strong> Excel, Power BI, Tableau, Jupyter, Google Colab</li>
+      <li><strong>Other:</strong> LLaMA Model, Chatbot Creation</li>
+    </ul>
   </section>
 
   <section>
@@ -165,41 +152,14 @@
   </section>
 
   <section>
-    <h2>🛍️ Fiverr Services</h2>
-
-    <div class="fiverr-gig">
-      <h3>📊 I will clean and analyze your data using Python or Excel</h3>
-      <p>Get well-structured insights and ready-to-use datasets. Includes visual summaries and detailed reports.</p>
-      <a href="#" class="btn">View Gig</a>
-    </div>
-
-    <div class="fiverr-gig">
-      <h3>📉 I will build stunning Tableau dashboards</h3>
-      <p>Impress clients and stakeholders with beautiful, interactive dashboards tailored to your KPIs.</p>
-      <a href="#" class="btn">View Gig</a>
-    </div>
-
-    <div class="fiverr-gig">
-      <h3>🤖 I will create predictive models using machine learning</h3>
-      <p>From churn prediction to NEET seat prediction – automate smart decisions using real models.</p>
-      <a href="#" class="btn">View Gig</a>
-    </div>
-  </section>
-
-  <section>
     <h2>📬 Contact</h2>
     <p><strong>Email:</strong> <a href="mailto:sanjayramesh414@gmail.com">sanjayramesh414@gmail.com</a></p>
     <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sanjay-r-545484283" target="_blank">linkedin.com/in/sanjay-r-545484283</a></p>
     <p><strong>GitHub:</strong> <a href="https://github.com/sanjay-analytics" target="_blank">github.com/sanjay-analytics</a></p>
   </section>
 
-  <section>
-    <h2>🚀 Let's Work Together</h2>
-    <p>If you're looking for a reliable data analyst to turn your data into actionable insights, <a href="mailto:sanjayramesh414@gmail.com">reach out</a>. I'm open to freelance, contract, or full-time opportunities.</p>
-  </section>
-
   <footer>
-    <p>&copy; 2025 Sanjay R. All rights reserved. | <a href="mailto:sanjayramesh414@gmail.com">Email</a> | <a href="https://linkedin.com/in/sanjay-r-545484283" target="_blank">LinkedIn</a></p>
+    <p>&copy; 2025 Sanjay R. All rights reserved.</p>
   </footer>
 
 </body>
