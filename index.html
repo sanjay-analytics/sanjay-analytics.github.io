@@ -1,4 +1,4 @@
-"<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -30,6 +30,11 @@
       font-size: 2.8rem;
       margin: 0;
       font-weight: 700;
+      background: linear-gradient(90deg, #FFD700, #FF69B4, #1E90FF);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientMove 4s linear infinite;
     }
 
     header .subtitle {
@@ -70,6 +75,7 @@
       font-size: 1.4rem;
       font-weight: 600;
       margin-bottom: 20px;
+      color: #000;
     }
 
     .btn {
@@ -160,7 +166,7 @@
 
   <section>
     <h2>📘 About Me</h2>
-    <p>I am an experienced Data Analyst with a strong track record of transforming complex datasets into strategic business insights. With expertise in Python, SQL, Excel, and Tableau, I specialize in developing interactive dashboards, automating reporting workflows, and applying analytical models to solve real-world problems.I collaborate closely with clients to deliver data-driven solutions that enhance decision-making and drive business growth.</p>
+    <p>I am an experienced Data Analyst with a strong track record of transforming complex datasets into strategic business insights. With expertise in Python, SQL, Excel, and Tableau, I specialize in developing interactive dashboards, automating reporting workflows, and applying analytical models to solve real-world problems. I collaborate closely with clients to deliver data-driven solutions that enhance decision-making and drive business growth.</p>
   </section>
 
   <section>
@@ -202,8 +208,7 @@
     <ul>
       <li>Analyzed recruitment data to identify hiring trends, candidate pipeline status, and team performance metrics.</li>
       <li>Designed and maintained interactive dashboards in Excel and Tableau to support decision-making for recruitment teams.</li>
-      <li>Developed a QA chatbot using <strong>deepset/roberta-base-squad2</strong> integrated with Flask and SQL Server to retrieve candidate information.
-      Implemented natural language query handling to provide recruiters with real-time details on candidate status, interviews, and joining dates.</li>
+      <li>Developed a QA chatbot using <strong>deepset/roberta-base-squad2</strong> integrated with Flask and SQL Server to retrieve candidate information. Implemented natural language query handling to provide recruiters with real-time details on candidate status, interviews, and joining dates.</li>
     </ul>
 
     <h3>🧑‍💻 Freelance Data Analyst – MP Electricals</h3>
@@ -243,7 +248,4 @@
   </footer>
 
 </body>
-</html>"
-
-
-
+</html>
