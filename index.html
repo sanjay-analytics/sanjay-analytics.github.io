@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -139,6 +139,29 @@
       text-decoration: underline;
     }
 
+    /* Responsive Video */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .video-container iframe,
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 12px;
+    }
+
     /* Footer */
     footer {
       background-color: #2c3e50;
@@ -219,6 +242,15 @@
       <li>Developed predictive models using EVM metrics to forecast project overruns and identify safety hotspots.</li>
       <li>Created financial and bidding analysis to support strategic project decisions and improve profit margins.</li>
     </ul>
+
+    <!-- 🎥 Video Section -->
+    <div class="video-container">
+      <!-- Replace 'your-video.mp4' with your actual video file or a YouTube embed link -->
+      <video controls>
+        <source src="your-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
     <h3>💼 Data Analyst – VVT Solutions Pvt Ltd</h3>
     <p><strong>Feb 2024 – Jun 2024</strong></p>
